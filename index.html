@@ -4,15 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>صفحة تعليم مناهج الثانوية | مدرسة التناغة الشرقية الثانوية المشتركة</title>
+<meta name="theme-color" content="#0a1f2c">
 <meta name="description" content="منصة تعليمية لطلاب ومدرسي وأولياء أمور مدرسة التناغة الشرقية الثانوية المشتركة.">
-<link rel="icon" href="assets/icons/favicon.svg">
+<link rel="icon" type="image/png" href="assets/icons/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-<symbol id="i-logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="#0b2545"/><path d="M16 7l9 4.5-9 4.5-9-4.5z" fill="#5cc3d9"/><path d="M10 15v5c3 2.5 9 2.5 12 0v-5" fill="none" stroke="#c9a24b" stroke-width="2" stroke-linecap="round"/></symbol>
 <symbol id="i-math" viewBox="0 0 24 24"><path d="M4 7h6M7 4v6M14 7h6M4 18h6M14 15l6 6M20 15l-6 6"/></symbol>
 <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h13v14H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h13"/></symbol>
 <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
@@ -38,59 +39,50 @@
 </svg>
 
 <div id="site">
-<header class="nav" id="nav">
-  <div class="wrap nav-in">
-    <a class="brand" href="#top"><svg class="logo"><use href="#i-logo"/></svg><span>التناغة الشرقية<small>الثانوية المشتركة</small></span></a>
-    <nav class="links" id="links">
-      <a href="#top">الرئيسية</a><a href="#subjects">المواد</a><a href="#teachers">المدرسون</a><a href="#news">الأخبار</a><a href="#contact">تواصل معنا</a>
-    </nav>
-    <button class="btn sm" data-login>تسجيل الدخول</button>
-    <button class="burger" id="burger" aria-label="القائمة"><svg class="ic"><use href="#i-menu"/></svg></button>
-  </div>
-</header>
+<i class="pgb" id="pg"></i>
+<header class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="#top"><img class="logo" src="assets/images/logo.jpg" alt="شعار مدرسة التناغة الشرقية الثانوية" width="40" height="40" decoding="async"><span>التناغة الشرقية<small>الثانوية المشتركة</small></span></a>
+  <nav class="links" id="links"><a href="#roles">الدخول</a><a href="#subjects">المواد</a><a href="#teachers">المدرسون</a><a href="#news">الأخبار</a><a href="#contact">تواصل معنا</a></nav>
+  <button class="btn sm" data-login>تسجيل الدخول</button>
+  <button class="burger" id="burger" aria-label="القائمة"><svg class="ic"><use href="#i-menu"/></svg></button>
+</div></header>
 
-<section class="hero" id="top">
-  <i class="dia d1"></i><i class="dia d2"></i>
-  <div class="wrap hero-in">
-    <div class="rv">
-      <span class="chip">منصة تعليمية للمرحلة الثانوية</span>
-      <h1>صفحة تعليم<br>مناهج الثانوية</h1>
-      <h2>مدرسة التناغة الشرقية الثانوية المشتركة</h2>
-      <p>دروس وفيديوهات وامتحانات وواجبات في مكان واحد، مع متابعة مستمرة لولي الأمر.</p>
-      <div class="acts"><button class="btn" data-login="signup">ابدأ التعلم</button><button class="btn ghost" data-login>تسجيل الدخول</button></div>
-    </div>
-    <div class="mock rv" id="mock">
-      <div class="bar"><i></i><i></i><i></i></div>
-      <img src="assets/images/school.jpg" alt="مبنى مدرسة التناغة الشرقية الثانوية" loading="lazy">
-    </div>
+<section class="hero" id="top"><div class="wrap hero-in">
+  <div class="ht">
+    <p class="kick">مدرسة التناغة الشرقية الثانوية المشتركة</p>
+    <h1>صفحة تعليم<br>مناهج الثانوية</h1>
+    <p class="lead">دروس وفيديوهات وامتحانات وواجبات في مكان واحد، مع متابعة مستمرة لولي الأمر.</p>
+    <div class="acts"><button class="btn" data-login="signup">ابدأ التعلم</button><button class="btn ghost" data-login>تسجيل الدخول</button></div>
   </div>
-</section>
+  <figure class="arch"><img src="assets/images/school.jpg" alt="مبنى مدرسة التناغة الشرقية الثانوية" fetchpriority="high" decoding="async" width="900" height="1205" onload="this.parentNode.classList.add('ok')"><div class="dm"><i></i><i></i><i></i></div></figure>
+</div></section>
 
 <section class="sec" id="roles"><div class="wrap">
   <div class="head rv"><h3>ادخل حسب نوع حسابك</h3><p>ثلاث تجارب مصممة لتناسب كل مستخدم.</p></div>
-  <div class="grid3" id="roleGrid"></div>
+  <div class="grid3 rv" id="roleGrid"></div>
 </div></section>
 
 <section class="sec alt" id="subjects"><div class="wrap">
   <div class="head rv"><h3>المواد الدراسية</h3><p>جميع مواد المرحلة الثانوية بمحتوى منظم.</p></div>
-  <div class="grid4" id="subGrid"></div>
+  <div class="grid4 rv" id="subGrid"></div>
 </div></section>
 
 <section class="sec" id="teachers"><div class="wrap">
-  <div class="head rv"><h3>المدرسون</h3><p>سيتم عرض هيئة التدريس هنا بعد تسجيل المدرسين واعتماد حساباتهم.</p></div>
+  <div class="head rv"><h3>المدرسون</h3></div>
+  <div class="empty rv"><div>سيتم عرض هيئة التدريس هنا بعد تسجيل المدرسين واعتماد حساباتهم.</div><button class="btn ghost" data-login="signup" data-r="teacher">سجّل كمدرس</button></div>
 </div></section>
 
 <section class="sec alt" id="news"><div class="wrap">
   <div class="head rv"><h3>أخبار المدرسة</h3></div>
-  <div class="grid3" id="newsGrid"></div>
+  <div class="grid3 rv" id="newsGrid"></div>
 </div></section>
 
-<section class="sec"><div class="wrap stats" id="stats"></div></section>
+<section class="sec"><div class="wrap stats rv" id="stats"></div></section>
 
 <footer class="foot" id="contact"><div class="wrap">
   <div class="fgrid">
-    <div><a class="brand"><svg class="logo"><use href="#i-logo"/></svg><span>التناغة الشرقية<small>الثانوية المشتركة</small></span></a><p>صفحة تعليم مناهج الثانوية</p></div>
-    <div><b>روابط</b><a href="#subjects">المواد</a><a href="#news">الأخبار</a><a data-login>تسجيل الدخول</a></div>
+    <div><a class="brand"><img class="logo" src="assets/images/logo.jpg" alt="شعار مدرسة التناغة الشرقية الثانوية" width="40" height="40" decoding="async"><span>التناغة الشرقية<small>الثانوية المشتركة</small></span></a><p>صفحة تعليم مناهج الثانوية</p></div>
+    <div><b>روابط</b><a href="subject.html">المواد</a><a href="news.html">الأخبار</a><a data-login>تسجيل الدخول</a></div>
     <div><b>تواصل معنا</b><span>التناغة الشرقية</span><span>بيانات التواصل تُضاف هنا</span></div>
   </div>
   <div class="copy">جميع الحقوق محفوظة لمدرسة التناغة الشرقية الثانوية المشتركة</div>
@@ -99,7 +91,7 @@
 
 <section id="login" class="view">
   <div class="lbox">
-    <svg class="logo big"><use href="#i-logo"/></svg>
+    <img class="logo big" src="assets/images/logo.jpg" alt="شعار مدرسة التناغة الشرقية الثانوية" width="72" height="72" decoding="async">
     <h3 id="lt">تسجيل الدخول</h3>
     <div class="seg" id="seg"><button data-r="student" class="on">طالب</button><button data-r="teacher">مدرس</button><button data-r="parent">ولي أمر</button></div>
     <div id="nmWrap" hidden><label>الاسم</label><input id="nm" autocomplete="name"></div>
@@ -113,6 +105,6 @@
 </section>
 
 <section id="app" class="view"></section>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
